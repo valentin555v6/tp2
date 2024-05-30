@@ -1,0 +1,51 @@
+Para el ejercicio 4, puedes 
+crear una estructura de carpetas como la siguiente: 
+ 
+- ejercicio4 
+  - index.html 
+  - styles.css 
+  - script.js 
+ 
+En el archivo  index.html ,
+ puedes crear 
+ un formulario que reciba la estatura y 
+ el peso de una persona y muestre su IMC 
+ como alerta al presionar un botón "calcular".
+  Aquí tienes un ejemplo básico de cómo podría lucir el código:
+
+CODIGO T1 : 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Índice de Masa Corporal (IMC)</h1>
+    <form>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" required>
+        
+        <label for="estatura">Estatura (m):</label>
+        <input type="number" id="estatura" step="0.01" required>
+        
+        <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+En el archivo  script.js , puedes agregar 
+el siguiente código 
+JavaScript para calcular el IMC y mostrarlo como alerta:
+
+CODIGO T2:
+function calcularIMC() {
+    const peso = parseFloat(document.getElementById('peso').value);
+    const estatura = parseFloat(document.getElementById('estatura').value);
+    
+    const imc = peso / (estatura ** 2);
+    
+    alert(`Tu Índice de Masa Corporal (IMC) es: ${imc.toFixed(2)}`);
+}

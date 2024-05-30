@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .usuario {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .titulo-usuario {
+    font-weight: bold;
+  }
+  
+  .tareas-usuario {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .tarea {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .tarea-completada {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
